@@ -5,13 +5,17 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/style.css">
   <meta charset="UTF-8">
+  <title>Welcome to Fotomatic</title>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="content">
-      <a href="index.html" class="desktop logo">Fotomatic</a>
+      <div class="desktop logo">  <!-- Div so the link is only the word, then flex-gow: 1; can be used on this div -->
+        <a href="index.html">Fotomatic</a>
+      </div>
       <nav class="desktop">
         <ul>
           <li><a href="#">Product detail</a></li>
@@ -24,9 +28,11 @@
           <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
           <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
           <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
         </ul>
       </nav>
+      <div class="tablet"> <!-- Div for Join us button so it can appear in mobile AND tablet view -->
+        <a href="#" class="button">Join us</a>
+      </div>
     </div>
   </header>
 
@@ -56,7 +62,7 @@
       <div class="feature">
         <div class="center">
           <div class="image-container">
-            <img src="images/feature-1.png" />
+            <img src="./resources/images/feature-1.png" />
           </div>
           <div class="content">
             <h2>Advanced, automatic, instant</h2>
@@ -67,7 +73,7 @@
       <div class="feature">
         <div class="center">
           <div class="image-container">
-            <img src="images/feature-2.png" />
+            <img src="./resources/images/feature-2.png" />
           </div>
           <div class="content">
             <h2>Beautifully crafted inside-out</h2>
@@ -99,7 +105,7 @@
       </div>
     </div>
 
-    <!-- Quotes Section
+    <!-- Quotes Section -->
     <div id="quotes-section">
       <div class="content center">
         <span class="quote">“It’s truly something that could create a brand new photography Renaissance”</span>
